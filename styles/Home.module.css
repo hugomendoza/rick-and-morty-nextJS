@@ -76,9 +76,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
   margin-top: 3rem;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .card {
@@ -91,6 +93,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+
 }
 
 .card:hover,
@@ -113,6 +116,22 @@
 
 .logo {
   height: 1em;
+}
+
+.search input {
+  margin-right: .5em;
+}
+
+@media (max-width: 600px) {
+  .search input {
+    margin-right: 0;
+    margin-bottom: .5em;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
